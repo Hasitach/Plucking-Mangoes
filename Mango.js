@@ -36,6 +36,9 @@ class Mango {
         image(this.image9,800,250,40,60);	
         image(this.image10,1150,250,40,60);	
 
+		if(isTouching(stone,Mango)){
+			isStatic:false
+		  }
 			var pos=this.body.position;
 			push()
 			translate(pos.x, pos.y);
